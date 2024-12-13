@@ -73,12 +73,12 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @SuppressWarnings("unused")
-public class V1_21_3 extends NMSWrapper {
+public class V1_21_4 extends NMSWrapper {
 
     private final Field craftMapViewWorldMapField;
     private final Field persistentIdCountsUsedAuxIdsField;
 
-    public V1_21_3() {
+    public V1_21_4() {
         try {
             craftMapViewWorldMapField = CraftMapView.class.getDeclaredField("worldMap");
             persistentIdCountsUsedAuxIdsField = ReflectionUtils.findDeclaredField(PersistentIdCounts.class, Object2IntMap.class, "usedAuxIds", "b");
